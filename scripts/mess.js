@@ -1,7 +1,7 @@
 $(function(){
 	$.ajax({
 		type:'POST',
-		url:"data/main.json",
+		url:"http://ofuxn0fz8.bkt.clouddn.com/main.json",
 		dataType:'json',		
 		success:function(data){	
 			// 给主页面添加li		
@@ -29,7 +29,7 @@ $(function(){
 				$(this).on('click',function(){
 					$.ajax({
 						type:"POST",
-						url:"data/blog.json",
+						url:"http://ofuxn0fz8.bkt.clouddn.com/blog.json",
 						dataType:"json",
 						success:function(data){
 							$("section").html(" ").removeClass();
@@ -64,7 +64,7 @@ $(function(){
 
 	$.ajax({
 		type:'POST',
-		url:"data/music.json",
+		url:"http://ofuxn0fz8.bkt.clouddn.com/music.json",
 		dataType:"json",
 		success:function(data){
 			//异步加载音乐列表
