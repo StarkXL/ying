@@ -1,11 +1,12 @@
 section {
 	width: 1200px;
 	margin: 45px auto 0 auto;
-	height: 820px;
+	min-height: 820px;
+	font-family: "Microsoft YaHei";
 }
 
 section .header {
-	height: 90px;
+	height: 120px;
 	width: 100%;
 	background: rgb(234, 103, 83);
 	font-family: "SimHei";
@@ -17,10 +18,53 @@ section .header h1 {
 	line-height: 90px;
 	padding-left: 25px;
 	font-weight: bold;
+	font-family: '微软雅黑';
+	color: #474343;
+}
+
+section .header h3 {
+	color: #474343;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding-left: 25px;
 }
 
 section .content {
 	width: 100%;
-	height: 600px;
+	min-height: 600px;
 	background: url('../images/dot.jpg');
+	padding-top: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 25px;
+}
+
+section .content .chunk {
+	width: 1180px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	border:1px dashed gray;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+section .content .chunk h1 {
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+section .content .chunk p {
+	font-size: 16px;
+}
+
+section .img img {
+	width: 950px;
+	height: 480px;
+	border:2px solid black;
+	border-radius: 5px;
+}
+
+section .img {
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
 }
