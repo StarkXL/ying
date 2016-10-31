@@ -1,6 +1,6 @@
 $(function(){
 	$.ajax({
-		type:'POST',
+		type:'GET',
 		url:"data/main.json",
 		dataType:'json',		
 		success:function(data){	
@@ -28,7 +28,7 @@ $(function(){
 			mainli.each(function(i){
 				$(this).on('click',function(){
 					$.ajax({
-						type:"POST",
+						type:"GET",
 						url:"data/blog.json",
 						dataType:"json",
 						success:function(data){
@@ -63,8 +63,8 @@ $(function(){
 	});
 
 	$.ajax({
-		type:'POST',
-		url:"music.json",
+		type:'GET',
+		url:"data/music.json",
 		dataType:"json",
 		success:function(data){
 			//异步加载音乐列表
