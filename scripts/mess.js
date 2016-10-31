@@ -1,7 +1,7 @@
 $(function(){
 	$.ajax({
 		type:'POST',
-		url:"http://ofuxn0fz8.bkt.clouddn.com/main.json",
+		url:"data/main.json",
 		dataType:'json',		
 		success:function(data){	
 			// 给主页面添加li		
@@ -29,7 +29,7 @@ $(function(){
 				$(this).on('click',function(){
 					$.ajax({
 						type:"POST",
-						url:"http://ofuxn0fz8.bkt.clouddn.com/blog.json",
+						url:"data/blog.json",
 						dataType:"json",
 						success:function(data){
 							$("section").html(" ").removeClass();
@@ -58,13 +58,13 @@ $(function(){
 			});
 		},
 		error:function(){
-			alert('获取数据失败');
+			console.log('li获取数据失败');
 		}
 	});
 
 	$.ajax({
 		type:'POST',
-		url:"http://ofuxn0fz8.bkt.clouddn.com/music.json",
+		url:"music.json",
 		dataType:"json",
 		success:function(data){
 			//异步加载音乐列表
@@ -111,7 +111,7 @@ $(function(){
 			})()
 		},
 		error:function(){
-			console.log("数据读取错误");
+			console.log("music数据读取错误");
 		}
 	});
 });
